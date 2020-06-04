@@ -4,19 +4,12 @@
 
 ```
 module "chucknorris" {
-  source = "github.com/darren-rose/terraform-module-moo?ref=v0.1"
-
-  say = var.say
+  source = "github.com/rocazac1/terraform-module-chucknorris"
 }
 
-variable "say" {
-  description = "What to say"
-  default     = "overridden"
-  type        = string
-}
 
-output "moo" {
-  value = module.moo
+output "chucknorris_joke" {
+  value = module.chucknorris
 }
 ```
 
